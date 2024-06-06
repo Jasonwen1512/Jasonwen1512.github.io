@@ -1,0 +1,162 @@
+.input-data {
+  position: relative;
+}
+.input-data input {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #b0bec5;
+  border-radius: 4px;
+}
+.input-data input[type="text"]:focus {
+  border-color: #3c62c9;
+  outline: none;
+}
+.add {
+  display: inline-flex;
+  margin-left: 5px;
+  border: 1px solid #3c62c9;
+  width: 23px;
+  height: 23px;
+  background-color: #3c62c9;
+  top: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add,
+.add svg {
+  position: relative;
+}
+.add svg {
+  left: 2px;
+  top: 2px;
+  fill: #fff;
+}
+.display-inputData ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 0;
+}
+.display-inputData ul li {
+  position: relative;
+}
+.display-inputData ul li div {
+  bottom: 4px;
+}
+.delete,
+.display-inputData ul li div {
+  position: relative;
+  display: inline-flex;
+}
+.delete {
+  margin-left: 10px;
+  border: 1px solid red;
+  width: 22px;
+  height: 22px;
+  background-color: red;
+  top: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete svg {
+  fill: #fff;
+  top: 1px;
+}
+.button,
+.delete svg,
+.random-selector {
+  position: relative;
+}
+.button {
+  background-color: #fff;
+  border: 1px solid #3c62c9;
+  border-radius: 4em;
+  font-size: 16px;
+  color: #37474f;
+  padding: 0.8em 1.8em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  top: 14px;
+}
+.button:hover {
+  transition-duration: 0.1s;
+  background-color: #3c62c9;
+  color: #fff;
+}
+.button:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px #fff;
+}
+.button:active:after,
+.button:after {
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+}
+.button:active:after {
+  box-shadow: 0 0 0 0 #fff;
+  opacity: 1;
+  transition: 0s;
+}
+.button:active {
+  top: 14px;
+}
+.button ~ div {
+  position: relative;
+  top: 80px;
+  font-size: 2em;
+}
+:root {
+  --main-color: #e1f5fe;
+  --secondary-color: #81c784;
+  --text-color: #37474f;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin-top: 60px;
+}
+body {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+.main {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+@media screen and (max-width: 767px) {
+  body,
+  html {
+    overflow: hidden;
+  }
+  .main > div:not(.input-data, .random-selector) {
+    display: none;
+  }
+  .random-selector {
+    opacity: 0;
+    width: 0;
+  }
+  .main {
+    overflow: hidden;
+    justify-content: center;
+    margin: 0;
+  }
+}
