@@ -1,0 +1,320 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: url('data:image/svg+xml,<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23003366" /><stop offset="100%" stop-color="%230066cc" /></linearGradient></defs><rect x="0" y="0" width="100%" height="100%" fill="url(%23gradient)" /><g transform="translate(960, 540)"><circle cx="0" cy="0" r="200" fill="%23ffffff" opacity="0.1" /><circle cx="0" cy="0" r="150" fill="%23ffffff" opacity="0.2" /><circle cx="0" cy="0" r="100" fill="%23ffffff" opacity="0.3" /><circle cx="0" cy="0" r="50" fill="%23ffffff" opacity="0.4" /></g><g transform="translate(1500, 300)"><circle cx="0" cy="0" r="160" fill="%23ffffff" opacity="0.1" /><circle cx="0" cy="0" r="120" fill="%23ffffff" opacity="0.2" /><circle cx="0" cy="0" r="80" fill="%23ffffff" opacity="0.3" /><circle cx="0" cy="0" r="40" fill="%23ffffff" opacity="0.4" /></g><g transform="translate(480, 270)"><circle cx="0" cy="0" r="150" fill="%23ffffff" opacity="0.1" /><circle cx="0" cy="0" r="100" fill="%23ffffff" opacity="0.2" /><circle cx="0" cy="0" r="50" fill="%23ffffff" opacity="0.3" /></g><g transform="translate(1440, 810)"><circle cx="0" cy="0" r="150" fill="%23ffffff" opacity="0.1" /><circle cx="0" cy="0" r="100" fill="%23ffffff" opacity="0.2" /><circle cx="0" cy="0" r="50" fill="%23ffffff" opacity="0.3" /></g><g transform="translate(380, 710)"><circle cx="0" cy="0" r="90" fill="%23ffffff" opacity="0.1" /><circle cx="0" cy="0" r="60" fill="%23ffffff" opacity="0.2" /><circle cx="0" cy="0" r="30" fill="%23ffffff" opacity="0.3" /></g><g transform="translate(1000, 200)"><circle cx="0" cy="0" r="90" fill="%23ffffff" opacity="0.1" /><circle cx="0" cy="0" r="60" fill="%23ffffff" opacity="0.2" /><circle cx="0" cy="0" r="30" fill="%23ffffff" opacity="0.3" /></g><g transform="translate(900, 900)"><circle cx="0" cy="0" r="120" fill="%23ffffff" opacity="0.1" /><circle cx="0" cy="0" r="80" fill="%23ffffff" opacity="0.2" /><circle cx="0" cy="0" r="40" fill="%23ffffff" opacity="0.3" /></g></svg>');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 50%;
+}
+.auth {
+  background-color: rgba(240, 248, 255, 0.9);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  overflow: hidden;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.auth > div > button {
+  margin-top: 15px;
+}
+.auth .title {
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: 700;
+  unicode-bidi: isolate;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+}
+.auth .navBarHover {
+  width: 90px;
+  height: 4px;
+  background-color: #0288d1;
+  position: absolute;
+  top: 42px;
+  left: 77px;
+  transition: all 0.2s ease-out;
+}
+@media (max-width: 500px) {
+  .navBarHover {
+    display: none;
+  }
+}
+.auth form {
+  display: flex;
+  flex-direction: column;
+}
+.auth form div {
+  margin-bottom: 1.1rem;
+}
+.auth form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.auth form input {
+  width: 260px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.auth .loginDiv button {
+  background-color: #0288d1;
+}
+.auth .loginDiv button,
+.auth .signinDiv button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 60px 0 60px;
+  font-size: medium;
+}
+.auth .signinDiv button {
+  background-color: #f28500;
+}
+.auth .signinDiv button:hover {
+  background-color: #ca6602;
+}
+.auth .loginAndSignin {
+  display: flex;
+  width: 200%;
+  transition: all 0.2s ease-out;
+}
+.auth .loginAndSignin .loginDiv,
+.auth .loginAndSignin .signinDiv {
+  width: 50%;
+  transition: all 0.2s ease-out;
+}
+.auth .loginAndSignin .loginDiv.slide,
+.auth .loginAndSignin .signinDiv.slide {
+  transform: translateX(-100%);
+}
+.auth button:hover {
+  background-color: #0277bd;
+}
+.auth .emailOrPasswordError {
+  border: 1px solid #e05d5d;
+  background-color: #fbdcdc;
+  color: #7a1f1f;
+  border-radius: 4px;
+  animation: glowForError 0.3s ease-in-out;
+}
+.auth .emailOrPasswordError,
+.auth .signinSuccess {
+  margin: 20px 50px 0 50px;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 700;
+}
+.auth .signinSuccess {
+  border: 1px solid #4bc742;
+  background-color: #c3f3c3;
+  color: #026802;
+  border-radius: 4px;
+  animation: glowForSuccess 0.3s ease-in-out;
+}
+.auth .duplicate {
+  border: 1px solid #00796b;
+  background-color: #b2dfdb;
+  color: #004d40;
+  margin: 20px 50px 0 50px;
+  border-radius: 4px;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 700;
+  animation: glowForDuplicate 0.3s ease-in-out;
+}
+@keyframes glowForError {
+  0% {
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(255, 0, 0, 0.4);
+  }
+  to {
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0);
+  }
+}
+@keyframes glowForSuccess {
+  0% {
+    box-shadow: 0 0 8px rgba(75, 199, 66, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(75, 199, 66, 0.4);
+  }
+  to {
+    box-shadow: 0 0 8px rgba(75, 199, 66, 0);
+  }
+}
+@keyframes glowForDuplicate {
+  0% {
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(0, 121, 107, 0.4);
+  }
+  to {
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0);
+  }
+}
+.remakeGlow {
+  animation: 0 !important;
+}
+.room {
+  background-color: hsla(0, 0%, 100%, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid #b8b7b7;
+  border-radius: 12px;
+  width: 66.67%;
+  max-width: 1000px;
+  min-width: 300px;
+  height: 80vh;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+@media (max-width: 768px) {
+  .room {
+    width: 90%;
+  }
+}
+.chatArea {
+  flex-grow: 1;
+  overflow-y: scroll;
+  margin-bottom: 16px;
+}
+.chatArea::-webkit-scrollbar {
+  display: none;
+}
+.scrollIndicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #59b5e7;
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  bottom: 11%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+  0%,
+  to {
+    transform: translate(-50%);
+  }
+  50% {
+    transform: translate(-50%, -8px);
+  }
+}
+.logout {
+  position: absolute;
+  top: -40px;
+  right: -1px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logout:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+.logout svg {
+  width: 24px;
+  height: 24px;
+}
+.chatArea .message {
+  display: flex;
+  align-items: flex-start;
+  max-width: 95%;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.chatArea .text {
+  background-color: hsla(0, 0%, 78%, 0.9);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #333;
+  line-height: 1.5;
+  word-wrap: break-word;
+  max-width: 50%;
+  text-align: left;
+}
+.chatArea .message.mySend {
+  justify-content: flex-end;
+}
+.chatArea .message.mySend .text {
+  background-color: #3bda78;
+}
+.spacerLine {
+  border-top: 1px solid #b8b7b7;
+  margin-bottom: 16px;
+}
+.inputArea {
+  display: flex;
+  gap: 8px;
+}
+input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
