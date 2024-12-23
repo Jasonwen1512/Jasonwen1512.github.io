@@ -15,6 +15,9 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
 }
+input, textarea {
+  font-size: initial;
+}
 .auth {
   background-color: rgba(240, 248, 255, 0.9);
   max-width: 400px;
