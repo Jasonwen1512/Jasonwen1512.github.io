@@ -10,6 +10,10 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-position: 50%;
+  padding-top: constant(safe-area-inset-top);
+  padding-right: constant(safe-area-inset-right);
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-left: constant(safe-area-inset-left);
 }
 .auth {
   background-color: rgba(240, 248, 255, 0.9);
