@@ -198,7 +198,7 @@ input, textarea {
   height: 80vh;
   margin: 0 auto;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -208,6 +208,7 @@ input, textarea {
 @media (max-width: 768px) {
   .room {
     width: 90%;
+    top: 55%
   }
 }
 .chatArea {
