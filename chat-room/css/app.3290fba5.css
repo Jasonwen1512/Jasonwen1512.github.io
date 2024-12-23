@@ -245,7 +245,7 @@ input, textarea {
 }
 .logout {
   position: absolute;
-  top: -40px;
+  top: -25px;
   right: -1px;
   cursor: pointer;
   width: 32px;
