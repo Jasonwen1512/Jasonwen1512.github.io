@@ -337,7 +337,7 @@ input.form-control:focus {
 }
 @media screen and (max-width: 768px) {
   #app {
-    margin-top: 40px !important;
+    /*margin-top: 40px !important;*/
   }
   html {
     overflow-x: hidden !important;
