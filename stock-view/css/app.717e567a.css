@@ -229,7 +229,7 @@ input.form-control:focus {
 .changeAndpercent {
   font-size: 1.5rem;
 }
-.otherInfo {
+Info {
   font-size: 1.2rem;
 }
 .fiveTick > table {
@@ -337,7 +337,7 @@ input.form-control:focus {
 }
 @media screen and (max-width: 768px) {
   #app {
-    /*margin-top: 40px !important;*/
+    margin-top: 5px !important;
   }
   html {
     overflow-x: hidden !important;
@@ -355,7 +355,7 @@ input.form-control:focus {
     padding-right: 10px;
   }
   .other-market {
-    max-height: calc(100vh - 301px);
+    max-height: calc(100vh - 260px);
   }
   .switch-page-enter-active {
     transition: all 0.3s ease-out;
