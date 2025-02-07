@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("serviceWorker.js")
+          .then((res) => console.log("service worker registered"))
+          .catch((err) => console.log("service worker not registered", err));
+      }
+    </script>
+    <title>stock-view</title>
+    <script defer="defer" src="js/chunk-vendors.9d24d700.js"></script>
+    <script defer="defer" src="js/app.0e4ecf98.js"></script>
+    <link href="css/chunk-vendors.801ac401.css" rel="stylesheet" />
+    <link href="css/app.717e567a.css" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript
+      ><strong
+        >We're sorry but stock-view doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      ></noscript
+    >
+    <div id="app"></div>
+  </body>
+</html>
