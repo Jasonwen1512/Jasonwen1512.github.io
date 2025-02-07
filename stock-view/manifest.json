@@ -1,0 +1,31 @@
+{
+  "name": "stock-view",
+  "short_name": "stock-view",
+  "theme_color": "#252728",
+  "background_color": "#1c1c1d",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "index.html",
+  "icons": [
+    {
+      "src": "logo72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "logo96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "logo144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "logo512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
