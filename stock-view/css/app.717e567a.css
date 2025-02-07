@@ -165,7 +165,7 @@ input.form-control:focus {
 .favorite-wrapper {
   width: auto;
   position: fixed;
-  top: 27vw;
+  top: 16vw;
   right: -200px;
   transition: all 0.2s ease-out;
   z-index: 1;
